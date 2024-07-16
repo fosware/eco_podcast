@@ -59,7 +59,7 @@ const useGeneratePocast = ({
     } catch(error){
       console.log('Error generating podcast', error)
       toast({
-        title: `Error creating a podcast ${error}`,
+        title: 'Error creating a podcast',
         variant: 'destructive' ,
       });
       setIsGenerating(false);
