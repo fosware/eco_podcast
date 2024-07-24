@@ -42,7 +42,7 @@ const RightSidebar = () => {
           <Carousel fansLikeDetail={topPodcasters!}/> 
         </section>
         <section className="flex flex-col gap-8">
-          <Header headerTitle="Top Podcastrs"/>
+          <Header headerTitle="Top EchoPodcasts"/>
           <div className="flex flex-col gap-6">
             {topPodcasters?.slice(0,4).map((podcaster) => (
               <div key={podcaster._id} className="flex cursor-pointer justify-between" onClick={() => router.push(`/profile/${podcaster.clerkId}`)}>
