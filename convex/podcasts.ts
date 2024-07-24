@@ -132,7 +132,7 @@ export const getPodcastByAuthorId = query({
 // this query will get the podcast by the search query.
 export const getPodcastBySearch = query({
   args: {
-    search: v.string(),
+    search:v.string() ,
   },
   handler: async (ctx, args) => {
     if (args.search === "") {
